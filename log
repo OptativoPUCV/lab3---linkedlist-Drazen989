@@ -70,3 +70,19 @@ list.c:60:6: error: ‘pushBack’ defined but not used [-Werror=unused-function
 cc1: all warnings being treated as errors
 Compilation failed
 b8afdb6
+Fri 29 Mar 2024 09:12:05 PM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:7: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   41 |   if (lista->head == NULL) {
+      |       ^~~~~
+      |       list
+list.c:41:7: note: each undeclared identifier is reported only once for each function it appears in
+list.c:47:1: error: control reaches end of non-void function [-Werror=return-type]
+   47 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4a73307

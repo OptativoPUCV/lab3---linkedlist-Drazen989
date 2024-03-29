@@ -40,6 +40,10 @@ List * createList() {
 void * firstList(List * list) {
   if (lista->head == NULL) {
     return NULL;
+  }
+  lista->current = lista->head;
+  return lista->current->data;
+  
 }
 
 void * nextList(List * list) {
